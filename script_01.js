@@ -32,9 +32,9 @@ function ausgabeName()
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
 // Argumente sind Daten für Parameter
-ausgabeName2("Sohrab"); // call + Argument(e)
-ausgabeName2("Cagri");
-ausgabeName2("Yalcin");
+// ausgabeName2("Sohrab"); // call + Argument(e)
+// ausgabeName2("Cagri");
+// ausgabeName2("Yalcin");
 
 
 function ausgabeName2(firstName)
@@ -50,5 +50,22 @@ function ausgabeNamenParams(firstName, familyName)
     console.log("Hallo " + firstName + " " + familyName + "!"); 
 }
 
-ausgabeNamenParams("Penny", "Tration");
-ausgabeNamenParams(prompt("Vorname"), prompt("Nachname"));
+// ausgabeNamenParams("Cagri", "Kurt");
+// ausgabeNamenParams(prompt("Vorname"), prompt("Nachname"));
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung -Trennen der Funktionalitäten
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
+
+ausgabeNamenParams("Cagri", "Kurt");
+
+function ausgabeNamenParams(firstName, familyName) 
+{
+    // 1. Funktionalität: string composing
+    const GAP = " ";
+    let outputStr = "Hallo" + GAP + firstName + GAP + familyName + "!"
+
+    // 2. Funktionalität: string output
+    console.log(outputStr); 
+}
