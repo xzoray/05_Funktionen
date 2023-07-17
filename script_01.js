@@ -13,3 +13,17 @@ function test()
 {
     console.log("Hallo Sohrab!");
 }
+
+
+/***** Funktionen 02a *****/
+// 2a. Parametrisierung + Datenübergabe von INNEN
+
+function ausgabeName()
+{
+    let firstName = "Jürgen";
+    console.log(`Hallo ${firstName}!`);
+}
+
+ausgabeName();
+
+// console.log(`Hallo ${firstName}!`); // Fehler --> SCOPE!
