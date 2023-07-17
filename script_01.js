@@ -41,3 +41,14 @@ function ausgabeName2(firstName)
 {
     console.log(`Hallo ${firstName}!`);
 }
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+function ausgabeNamenParams(firstName, familyName) 
+{
+    console.log("Hallo " + firstName + " " + familyName + "!"); 
+}
+
+ausgabeNamenParams("Penny", "Tration");
+ausgabeNamenParams(prompt("Vorname"), prompt("Nachname"));
