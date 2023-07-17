@@ -4,7 +4,7 @@
 // 1. Kapselung von Codeblöcken
 
 // Funktionsaufruf (call)
-test();
+// test();
 
 // Funktionsrumpf (body) | callee
 // Funktionsdeklaration
@@ -20,10 +20,24 @@ function test()
 
 function ausgabeName()
 {
-    let firstName = "Jürgen";
+    let firstName = "Chai";
     console.log(`Hallo ${firstName}!`);
 }
 
-ausgabeName();
+// ausgabeName();
 
 // console.log(`Hallo ${firstName}!`); // Fehler --> SCOPE!
+
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+// Argumente sind Daten für Parameter
+ausgabeName2("Sohrab"); // call + Argument(e)
+ausgabeName2("Cagri");
+ausgabeName2("Yalcin");
+
+
+function ausgabeName2(firstName)
+{
+    console.log(`Hallo ${firstName}!`);
+}
